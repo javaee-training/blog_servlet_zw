@@ -2,9 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>首页</title>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-	<p>	hello world!</p>
+<body>              
+<div class="container">
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../index.html">张三的博客</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="register.html">注册</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+	<div class="panel panel-default"  style="float:letf; max-width:550px">
+		<div class="panel-heading">文章</div>
+		<div class="panel-body">
+			<form>
+			<br>
+			<br>
+				<div id="footer" style="clear:both;text-align:center;">没有文章</div>
+				  
+			</form>
+		</div>           
+    </div>
+    <div class="panel panel-default"  style="float:right; max-width:150px;">
+		<div class="panel-heading">标签</div>
+		<div class="panel-body">
+			<form>
+				<div id="footer" style="clear:both;text-align:center;">没有定义标签</div>				  
+			</form>
+		</div>           
+    </div>
+    <div style="margin:0 auto;width:300px">
+		<button type="button" class="btn btn-default btn-xs">上一页</button>
+    	<button type="button" class="btn btn-default btn-xs">下一页</button>
+	</div> 
+    	
+</div>
 </body>
 </html>
