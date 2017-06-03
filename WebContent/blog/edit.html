@@ -11,7 +11,7 @@
 </head>
 <body>
 <!--页面-->              
-<div class="container-fluid">
+<div class="container">
 	<!--导航栏-->
 	<nav class="navbar navbar-default">
 		<!--Logo区 -->
@@ -47,7 +47,6 @@
 		<div class="panel-heading">编辑文章</div>
 		<div class="panel-body">
 			<form>
-				<fieldset disabled>
 					<!--编辑标题-->
 					<div class="form-group">
 						<label for="articleName">标题</label>
@@ -64,16 +63,35 @@
 					<!--编辑内容-->
 					<div class="form-group">
 						<label for="article">内容</label>
-						<textarea class="form-control" rows="6">
+						<div>
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">编辑</a>
+								</li>
+								<li role="presentation">
+									<a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">预览</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="edit">
+									<textarea rows="10" class="form-control" id="content">
 空山不见人，但闻人语响。
 反影如深林，复照青苔上。
-						</textarea>
+									</textarea>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="preview">
+									<textarea rows="10" class="form-control" id="content">
+空山不见人，但闻人语响。
+反影如深林，复照青苔上。
+									</textarea>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!--保存按钮-->
 					<div class="form-group pull-right">
 						<button type="button" class="btn btn-default btn-Right">保存</button>
 					</div>
-				</fieldset>
 			</form>
 		</div>	
 	</div>

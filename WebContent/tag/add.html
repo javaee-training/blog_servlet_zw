@@ -2,11 +2,66 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>添加标签</title>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-	<div class="container-fluid">
-		
+	<!--页面-->              
+	<div class="container">
+		<!--导航栏-->
+		<nav class="navbar navbar-default">
+			<!--Logo区 -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">张三的博客</a>
+			</div>
+			<!--用户操作区-->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<!--添加文章-->
+					<li><a href="#">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true">文章</span></a>
+					</li>
+					<!--添加标签-->
+					<li><a href="tag/add.html">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true">标签</span></a>
+					</li>
+					<!--用户信息-->
+					<li><a href="blog/index.html">
+						<span class="glyphicon glyphicon-user" aria-hidden="true">张三</span></a>
+					</li>
+					<!--退出按钮-->
+					<li style="margin-top:8px;margin-right:7px;">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-log-out" aria-hidden="true">退出</span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- 录入标签 -->
+		<div class="center-block">
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">录入标签</h3>
+					</div>
+					<div class="panel-body">
+						<form>
+							<!--用户名-->
+							<div class="form-group">
+								<label for="tags">标签</label>
+								<input type="text" id="tags" class="form-control">
+							</div>
+							<div class="form-group" style="float: right;">
+								<button type="button" class="btn btn-default">保存</button>
+							</div>
+						</form>
+					</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
