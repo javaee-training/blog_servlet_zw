@@ -64,7 +64,26 @@
 					<!--添加内容-->
 					<div class="form-group">
 						<label for="article">内容</label>
-						<textarea class="form-control" rows="6"></textarea>
+						<div>
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">编辑</a>
+								</li>
+								<li role="presentation">
+									<a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">预览</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="edit">
+									<textarea rows="10" class="form-control" id="content"></textarea>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="preview">
+									<div style="height:200px">
+										无内容可预览
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!--保存按钮-->
 					<div class="form-group pull-right">
